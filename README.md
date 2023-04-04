@@ -1,4 +1,4 @@
-# FastFood
+# Template
 
-https://hc19082001.github.io/Tempalate/FastFood/
-https://hc19082001.github.io/Tempalate/ClashOfClans/
+https://hc19082001.github.io/Template/FastFood/ \\
+https://hc19082001.github.io/Template/ClashOfClans/
