@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 0 11%;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 33px 8%;
+  background-color: transparent;
+}
+header .logo {
+  font-size: 33px;
+  font-weight: 700;
+  color: white;
+}
+header .navlist {
+  display: flex;
+}
+header .navlist a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: 0.55s;
+}
+header .navlist a:hover {
+  border-bottom: 2px solid white;
+}
+header #menu-icon {
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+.hero {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(245.6deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.hero .hero-text {
+  color: white;
+}
+.hero .hero-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.hero .hero-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hero .hero-text h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 45px;
+}
+.hero .hero-text p {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.hero .hero-text a {
+  display: inline-block;
+  color: white;
+  background-color: #4d9559;
+  border: 1px solid transparent;
+  padding: 12px 30px;
+  line-height: 1.4;
+  border-radius: 30px;
+  transition: all 0.55s ease;
+}
+.hero .hero-text a.ctaa {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+.hero .hero-text a.ctaa i {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.hero .hero-text a:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translateX(-8px);
+}
+.hero .hero-img img {
+  width: 100%;
+  height: auto;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 3%;
+  transform: translateY(-50%);
+}
+.icons i {
+  display: block;
+  margin: 26px 0;
+  font-size: 26px;
+  color: wheat;
+  transition: all 0.5s ease;
+}
+.icons i:hover {
+  color: #4d9559;
+  transform: translateY(-5px);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.scroll-down i {
+  display: block;
+  padding: 12px;
+  font-size: 25px;
+  color: wheat;
+  background-color: #4d9559;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+}
+.scroll-down i:hover {
+  transform: translateY(-8px);
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 15px 5%;
+  }
+  .icons {
+    padding: 0 2%;
+  }
+  .scroll-down {
+    right: 2%;
+    bottom: 2%;
+  }
+}
+@media (max-width: 990px) {
+  header .logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+  }
+  header .navlist a {
+    margin-left: 30px;
+  }
+  section {
+    padding: 0 8%;
+  }
+  .hero .hero-text h1 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 970px) {
+  header {
+    background-color: #4d9559;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  .hero .hero-text {
+    padding-top: 115px;
+  }
+  .hero .hero-img {
+    text-align: center;
+  }
+  .hero .hero-img img {
+    width: 350px;
+    height: auto;
+  }
+  .scroll-down,
+  .icons {
+    display: none;
+  }
+}
+@media (max-width: 745px) {
+  header .navlist {
+    position: absolute;
+    flex-direction: column;
+    right: -200%;
+    top: 100%;
+    background-color: #4d9559;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  header .navlist a {
+    margin: 0;
+    display: block;
+    padding: 10px;
+  }
+  header .navlist.active {
+    right: 0;
+  }
+  header #menu-icon {
+    display: block;
+  }
+}
+@media (max-width: 465px) {
+  .hero .hero-text .ctaa {
+    margin-top: 1rem;
+  }
+  .hero .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
