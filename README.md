@@ -9,3 +9,5 @@ https://hc19082001.github.io/Template/Headphone/
 https://hc19082001.github.io/Template/HoneyShop/
 
 https://hc19082001.github.io/Template/TrafalgarLanding/
+
+https://hc19082001.github.io/Template/WatchShop/
