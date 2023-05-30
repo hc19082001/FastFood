@@ -28,7 +28,7 @@ header {
             cursor: pointer;
         }
     }
-    ul {
+    .main-menu {
         flex-grow: 1;
         display: flex;
         justify-content: center;
@@ -93,6 +93,7 @@ header {
         .avatar {
             width: 40px;
             height: 40px;
+            position: relative;
             &:hover {
                 cursor: pointer;
             }
@@ -101,6 +102,88 @@ header {
                 object-fit: contain;
                 width: 100%;
                 height: 100%;
+                transition: all 0.3s;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .avt-tooltip {
+                position: absolute;
+                border-radius: 5px;
+                min-width: 170px;
+                top: 150%;
+                right: 0;
+                background-color: #242424;
+                padding: 2rem;
+                transition: all 0.5s;
+                clip-path: circle(0 at 100% 0%);
+                &.show {
+                    clip-path: circle(200% at 100% 0%);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    border-radius: 2px;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #242424;
+                    transform: rotate(45deg);
+                    right: 10px;
+                    top: -6px;
+                }
+                .header-tooltip {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        left: -2rem;
+                        bottom: -1rem;
+                        width: calc(100% + 4rem);
+                        height: 1px;
+                        background-color: orange;
+                    }
+                    h2 {
+                        white-space: nowrap;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 19px;
+                        line-height: 17px;
+                        letter-spacing: 0.02em;
+                        color: #f68422;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font-family: "Inter", serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 15px;
+                        letter-spacing: 0.02em;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+                ul {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    li {
+                        font-family: "Inter", sans-serif;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: rgba(255, 255, 255, 0.6);
+                        transition: all 0.3s;
+                        &:hover {
+                            cursor: pointer;
+                            color: white;
+                        }
+                    }
+                }
             }
         }
     }
@@ -252,6 +335,7 @@ footer {
         position: relative;
         img {
             position: absolute;
+            border-radius: 10px;
             width: 100%;
             height: 100%;
             object-fit: cover;

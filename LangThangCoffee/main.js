@@ -1,5 +1,7 @@
 const customer_rate = document.querySelector(".customer-rate");
 const images = document.querySelectorAll(".spaces .image img");
+const avt_tooltip = document.querySelector(".avt-tooltip");
+const avt = document.querySelector(".avatar");
 let present,
     scrollLeftPresent,
     idIntervalAutoScroll,
@@ -54,3 +56,13 @@ setInterval(() => {
         ++indexImage;
     }
 }, 3000);
+
+window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 0) {
+        avt_tooltip.classList.remove("show");
+    }
+});
+avt.addEventListener("click", (e) => {
+    avt_tooltip.classList.toggle("show");
+    console.log(avt_tooltip.className);
+});
