@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SCSS -->
+        <link rel="stylesheet" href="style/style.css" />
+        <!-- Google Fonts -->
+        <!-- Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet" />
+        <!-- Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <!-- Box Icons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <div class="search">
+                <i class="bx bx-search"></i>
+            </div>
+            <ul>
+                <li><a href="#welcome">Trang Chủ</a></li>
+                <li><a href="#menu">Thực đơn</a></li>
+                <li>
+                    <a href="#"><img src="images/Langthanglogo.svg" alt="" /></a>
+                </li>
+                <li><a href="#discount">Ưu đãi</a></li>
+                <li><a href="#about-us">Về chúng tôi</a></li>
+            </ul>
+            <div class="nav-menu">
+                <div class="cart">
+                    <i class="bx bx-cart"></i>
+                    <span>10</span>
+                </div>
+                <div class="avatar">
+                    <img src="images/avatar.jpg" alt="" />
+                </div>
+            </div>
+            <div id="toggle-menu">
+                <i class="bx bx-menu"></i>
+            </div>
+        </header>
+
+        <section class="welcome" id="welcome">
+            <h3><i>#Welcome To</i></h3>
+            <h1>
+                THE LANGTHANG <br />
+                COFFEE HOUSE
+            </h1>
+            <p>Không chỉ là Coffee, chúng tôi bán cả sự trải nghiệm</p>
+            <div class="manu">
+                <div class="base-btn">Đặt hàng</div>
+                <a href="#">Xem video giới thiệu</a>
+            </div>
+        </section>
+        <section class="spaces">
+            <div class="text">
+                <h1>VỀ KHÔNG GIAN</h1>
+                <p>
+                    Không gian của LANGTHANG COFFEE được thiết kế với tông màu vàng ấm áp và thoải mái. Đồ nội thất được bố trí
+                    thông minh và tinh tế để mang lại sự thoải mái cho khách hàng. Bức tranh nghệ thuật treo trên tường cùng với
+                    đèn lồng pha lê tạo ra một không gian sang trọng và quyến rũ. Bạn có thể ngồi ở các góc ngồi riêng tư hoặc các
+                    bàn đơn tùy theo sở thích của mình. LANGTHANG COFFEE sẽ là một nơi lý tưởng để bạn tìm kiếm sự yên bình và thư
+                    giãn.
+                </p>
+            </div>
+            <div class="image">
+                <img class="show" src="images/kogian.png" alt="" />
+                <img src="images/A-Modern-Colombian-Coffee-Shop-2-1024x667.jpg" alt="" />
+                <img src="images/images.jpg" alt="" />
+                <img src="images/inside-the-coffee-shop.jpg" alt="" />
+            </div>
+        </section>
+        <section class="seemore">
+            <div class="banner">
+                <h1>
+                    Best seller #1 <br />
+                    Cà phê sữa
+                </h1>
+                <img class="coffecup" src="images/tempCoffe.png" alt="" />
+            </div>
+            <div class="more">
+                <div class="outline-btn">Cùng tìm hiểu thêm <i class="bx bx-right-arrow-alt"></i></div>
+            </div>
+        </section>
+        <section class="menu dark-banner" id="menu">
+            <h1 class="title">CÓ GÌ TRONG THỰC ĐƠN ?</h1>
+            <div class="list-menu">
+                <div class="category">
+                    <div class="active"><a href="#">Cà phê</a></div>
+                    <div><a href="#">Trà sữa</a></div>
+                    <div><a href="#">Soda</a></div>
+                </div>
+                <div class="products">
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/coffee/Hình 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Cà phê đen</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/coffee/Hình 2.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Cà phê sữa</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/coffee/Hình 3.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Cà phê thường</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/coffee/Hình 4.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Cà phê phô mai</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/coffee/Hình 5.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Milo dằm</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discount dark-banner">
+            <h1 class="title">cùng với những ưu đãi</h1>
+            <div class="frame">
+                <div class="dis1">
+                    <div class="cake-img">
+                        <img src="images/dishes/Rectangle 132.png" alt="" />
+                    </div>
+                    <div class="cake-des">
+                        <h1>ƯU ĐÃI #1</h1>
+                        <p>
+                            Sự kết hợp giữa Cappuccino và bánh bông lan nhân khô nho là một cách tuyệt vời để kết hợp hương vị
+                            ngọt ngào và tươi mát. Cappucino thơm ngon và mát lạnh sẽ làm dịu cơn khát vào những ngày nóng bức.
+                            Bánh bông lan nhân khô nho sẽ tạo ra một vị ngọt dịu, cùng với vị giòn của bánh, mang lại trải nghiệm
+                            thưởng thức đầy tuyệt vời. Hãy đến LangThang Coffee của chúng tôi để thưởng thức Ưu Đãi này ngay hôm
+                            nay!
+                        </p>
+                    </div>
+                </div>
+                <div class="dis2">
+                    <div class="cake-des">
+                        <h1>ƯU ĐÃI #2</h1>
+                        <p>
+                            Cappucino thơm ngon và mát lạnh sẽ làm dịu cơn khát vào những ngày nóng bức. Bánh bông lan nhân khô
+                            nho sẽ tạo ra một vị ngọt dịu, cùng với vị giòn của bánh, mang lại trải nghiệm thưởng thức đầy tuyệt
+                            vời. Hãy đến LangThang Coffee của chúng tôi để thưởng thức Ưu Đãi này ngay hôm nay!
+                        </p>
+                    </div>
+                    <div class="cake-img">
+                        <img src="images/dishes/Rectangle 133.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu menu-cake dark-banner">
+            <h1 class="title">
+                BÁNH NGỌT <br />
+                SAO LẠI KHÔNG ?
+            </h1>
+            <div class="list-menu">
+                <div class="products">
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh1 2.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh cuộn nho khô</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh2 3.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh nướng mè</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh3 2.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh sừng</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh4 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh Mật Ngọt</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh5 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh Mứt Dâu</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh6 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh Trứng Muối</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh7 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh Quế Mật Ong</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                    <div class="product">
+                        <div class="image">
+                            <img src="images/dishes/cake/banh8 1.png" alt="" />
+                        </div>
+                        <div class="infor">
+                            <div class="name">
+                                <h4>Bánh Trứng Nướng</h4>
+                                <p>25.000 VNĐ</p>
+                            </div>
+                            <i class="bx bx-heart" style="color: #fcef2a"></i>
+                        </div>
+                        <div class="base-btn">Thêm vào giỏ hàng</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explain">
+            <h1 class="title">
+                Vì sao chúng tôi là <br />
+                nơi lí tưởng cho bạn
+            </h1>
+            <div class="exp-section">
+                <div class="about">
+                    <img src="images/52c7376b-86e5-4e60-9224-3debec83ddfd 2.png" alt="" />
+                    <div class="exp-text">
+                        <h1>Về Cà Phê</h1>
+                        <p>
+                            Cà phê tại quán của chúng tôi được pha chế từ những hạt cà phê chọn lọc kỹ càng và rang theo phương
+                            pháp truyền thống để đảm bảo hương vị đặc trưng và chất lượng tuyệt vời. Đến với quán cà phê của chúng
+                            tôi, bạn sẽ được thưởng thức một tách cà phê đậm đà và thơm ngon nhất.
+                        </p>
+                    </div>
+                </div>
+                <div class="about">
+                    <div class="exp-text">
+                        <h1>Về Môi Trường</h1>
+                        <p>
+                            Quán của chúng tôi có không gian ấm cúng và thiết kế sang trọng, tạo ra một môi trường thư giãn và đầy
+                            cảm hứng cho khách hàng. Bạn sẽ có cơ hội thưởng thức cà phê tuyệt vời trong một không gian thoải mái
+                            và đầy hứng khởi. Hãy ghé thăm quán của chúng tôi để tận hưởng không gian đẹp và thoải mái nhất.
+                        </p>
+                    </div>
+                    <img src="images/Rectangle 166.png" alt="" />
+                </div>
+                <div class="about">
+                    <img src="images/image 3.png" alt="" />
+                    <div class="exp-text">
+                        <h1>Về Giao Hàng</h1>
+                        <p>
+                            Quán của chúng tôi có không gian ấm cúng và thiết kế sang trọng, tạo ra một môi trường thư giãn và đầy
+                            cảm hứng cho khách hàng. Bạn sẽ có cơ hội thưởng thức cà phê tuyệt vời trong một không gian thoải mái
+                            và đầy hứng khởi. Hãy ghé thăm quán của chúng tôi để tận hưởng không gian đẹp và thoải mái nhất.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discount-customer" id="discount">
+            <div class="discount-text">
+                <h2>
+                    Ưu đãi Dành riêng <br />
+                    Cho khách hàng qua website
+                </h2>
+                <p>
+                    Chúng tôi rất cảm kích sự quan tâm của bạn đến LangThang Coffee House và mong muốn có cơ hội chào đón bạn tới
+                    thưởng thức các loại nước uống và bánh ngọt tuyệt vời của chúng tôi. Hãy để lại thông tin của bạn để nhận ngay
+                    ưu đãi đặc biệt của chúng tôi - giảm ngay 30% trên tổng hóa đơn khi mua nước và bánh tại cửa hàng. Bằng cách
+                    đăng ký, bạn sẽ trở thành một phần của cộng đồng LangThang và được cập nhật về những sự kiện và ưu đãi đặc
+                    biệt sớm nhất. Chúng tôi cam kết bảo mật thông tin của bạn và chỉ sử dụng để gửi cho bạn các ưu đãi và tin tức
+                    mới nhất từ LangThang Coffee House. Một lần nữa, chúng tôi rất trân trọng sự quan tâm của bạn và hy vọng được
+                    đón tiếp bạn tại LangThang Coffee House sớm nhất!
+                </p>
+            </div>
+            <div class="form">
+                <h2>Thông tin</h2>
+                <div class="ip-form">
+                    <input type="text" placeholder="Họ và tên khách hàng" />
+                    <input type="email" placeholder="Email khách hàng" />
+                    <input type="text" placeholder="Lời nhắn khách hàng" />
+                    <div class="base-btn">Gửi</div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <h1 class="title">Và chúng tôi</h1>
+            <div class="infors">
+                <div class="infor">
+                    <div class="avt">
+                        <img src="images/creator1.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                        <h3>Nguyễn Minh Trí</h3>
+                        <p>Manager</p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-github"></i></a>
+                    </div>
+                </div>
+                <div class="infor">
+                    <div class="avt">
+                        <img src="images/creator2.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                        <h3>Hồ Thị Tố Quyên</h3>
+                        <p>Founder</p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-github"></i></a>
+                    </div>
+                </div>
+                <div class="infor">
+                    <div class="avt">
+                        <img src="images/creator3.jpg" alt="" />
+                    </div>
+                    <div class="details">
+                        <h3>Cao Đức Long</h3>
+                        <p>Co-founder</p>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rate dark-banner">
+            <h1 class="title">Khách hàng nghĩ gì về chúng tôi</h1>
+            <p class="thumb">"Sự hài lòng của các bạn chính là thành công to lớn nhất của chúng tôi"</p>
+            <div class="customer-rate">
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="wrapper">
+                        <img src="images/cus1.jpg" alt="" />
+                        <h3>Nguyễn Thuỳ Tiên</h3>
+                        <h5>Giảng Viên</h5>
+                        <a href="#"><i class="bx bx-like"></i></a>
+                        <p>
+                            Tôi rất hài lòng về sản phẩm dịch vụ của bạn. Doanh số bán hàng của chúng tôi tăng lên đáng kể, khách
+                            hàng cũng phần nào phản hồi tích cực. Hy vọng chúng ta có nhiều cơ hội làm việc với nhau hơn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="opinion">
+                <div class="base-btn">Đóng góp ý kiến</div>
+            </div>
+        </section>
+        <section class="slogan">
+            <img src="images/Langthanglogo.svg" alt="" />
+            <h1>"Bởi vì chúng tôi có thể"</h1>
+        </section>
+        <footer>
+            <div class="logo-slogan">
+                <img src="images/Langthanglogo.svg" alt="" />
+                <p>Nơi đây là không gian, và cà phê là phương tiện để chúng ta sát lại gần nhau hơn</p>
+            </div>
+            <div class="links">
+                <div class="tab">
+                    <h4 class="link-title">Thông tin liên hệ</h4>
+                    <div class="address">
+                        <table cellpadding="3">
+                            <tr>
+                                <td><i class="bx bx-location-plus"></i></td>
+                                <td>
+                                    <b>Hồ Chí Minh</b>
+                                    <p>391A Đ. Nam Kỳ Khởi Nghĩa, Phường 14, Quận 3</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="bx bx-envelope"></i></td>
+                                <td>
+                                    <b>Gmail</b>
+                                    <p>hc19082001@gmail.com</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="contact">
+                        <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="tab">
+                    <h4 class="link-title">Sản Phẩm</h4>
+                    <ul>
+                        <li><a href="#">Cà Phê</a></li>
+                        <li><a href="#">Sữa Tươi</a></li>
+                        <li><a href="#">Trà Sữa</a></li>
+                        <li><a href="#">Soda</a></li>
+                        <li><a href="#">Bánh ngọt</a></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                    <h4 class="link-title">Giúp đỡ</h4>
+                    <ul>
+                        <li><a href="#">Tìm Kiếm</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                    </ul>
+                </div>
+                <div class="tab">
+                    <h4 class="link-title">Khác</h4>
+                    <p>Đăng Ký Nhận Khuyến Mãi</p>
+                    <div class="register">
+                        <input type="text" placeholder="Nhập email của bạn" />
+                        <div class="base-btn">Đăng ký</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="copyright"><p>2023 Copyright © TheLangThang. All rights reserved</p></section>
+        <script src="main.js"></script>
+    </body>
+</html>
